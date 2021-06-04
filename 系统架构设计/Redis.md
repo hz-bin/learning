@@ -126,7 +126,7 @@ typedef struct zskiplist {
 
 - zlbytes：压缩列表的字节长度，占4个字节，因此压缩列表最多有2^32-1个字节。
 - zltail：压缩列表尾元素相对于压缩列表起始地址的偏移量，占4个字节。
-- zllen：压缩列表的元素个数，占2个字节。zllen无法存储超过2^16-1个元素，必须遍历整个压缩列表才能获取到元素个数。
+- zllen：压缩列表的元素个数，占2个字节。zllen无法存储超过2^16-1个元素，当值为UINT16_MAX时，必须遍历整个压缩列表才能获取到元素个数。
 - entryX：压缩列表存储的元素，可以是字节数组或整数，长度不限。
 - zlend：压缩列表的结尾，占一个字节，恒为0xFF
 
@@ -283,6 +283,14 @@ typedef struct quicklist {
     - zset中元素个数大于 `zset-max-ziplist-entries`
     - 插入元素的字符串长度大于 `zset-max-ziplist-value`
 
+#### 1.7.5 HyperLogLog
+- pfadd、pfcount、pfmerge
+- 用来做基数统计，每个key用12KB内存，计算接近2^64个不同的元素。
+- 可用于统计网站UV（去重统计访问页面人数）
+
+#### 1.7.6 Bitmap
+- setbit、getbit、bitcount
+- 可用于统计用户每日签到等。
 
 ## 2、[Redis高可用](https://mp.weixin.qq.com/s/GD4bskDa9lYwzi5oC0dscA)
 - 在Redis(Remote Dictionary Server)中，实现高可用的技术主要包括持久化、复制、哨兵和集群，下面分别说明它们的作用，以及解决了什么样的问题：

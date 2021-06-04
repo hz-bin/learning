@@ -108,4 +108,6 @@ https://juejin.im/post/6844904163042656263
 
 
 ## Kafka
-https://www.jianshu.com/p/5f510cb9d7f1
+- https://www.jianshu.com/p/5f510cb9d7f1
+
+- https://snailclimb.gitee.io/javaguide/#/docs/system-design/distributed-system/message-queue/Kafka%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93

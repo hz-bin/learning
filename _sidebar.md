@@ -1,5 +1,7 @@
 - 编程语言
     - [C++基础知识](编程语言/C++基础知识.md)
+    - [Golang](编程语言/Golang.md)
+    - [Python](编程语言/Python.md)
 
 - 数据结构和算法
     - [算法与数据结构](数据结构和算法/算法与数据结构.md)
@@ -13,3 +15,4 @@
 - 系统架构
     - [Zookeeper、Kafka](系统架构设计/Zookeeper、Kafka.md)
     - [Redis](系统架构设计/Redis.md)
+    - [系统设计](系统架构设计/系统设计.md)
