@@ -2,6 +2,7 @@
     - [C++基础知识](编程语言/C++基础知识.md)
     - [Golang](编程语言/Golang.md)
     - [Python](编程语言/Python.md)
+    - [OpenMP](编程语言/OpenMP.md)
 
 - 数据结构和算法
     - [算法与数据结构](数据结构和算法/算法与数据结构.md)
